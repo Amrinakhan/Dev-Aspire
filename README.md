@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Awake Agency - Next.js Template
+
+A modern, responsive agency website built with Next.js, TypeScript, Bootstrap, and SCSS. This is a conversion of the original HTML template to Next.js while maintaining all original designs and animations.
+
+## Features
+
+- ⚡ Built with Next.js 16 and React 19
+- 🎨 Bootstrap 5.3 for responsive design
+- 💅 SCSS for styling with original design system
+- 🎭 AOS (Animate On Scroll) for smooth animations
+- 📱 Fully responsive and mobile-friendly
+- 🔍 SEO optimized with Next.js metadata
+- 🎯 TypeScript for type safety
+- 🚀 Optimized images with Next.js Image component
+- 🔤 Optimized Google Fonts (Inter Tight & Instrument Serif) with next/font
+
+## Pages
+
+- **Home** - Landing page with all sections (About, Services, Work, Team, Pricing, Awards)
+- **Contact** - Contact form with FAQ section
+- **Privacy Policy** - Privacy policy page
+- **Terms & Conditions** - Terms and conditions page
+- **404** - Custom 404 error page
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ and npm
+
+### Installation
+
+1. Navigate to the project directory:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd awake-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+awake-nextjs/
+├── app/                          # Next.js app directory
+│   ├── layout.tsx               # Root layout with scripts
+│   ├── page.tsx                 # Home page
+│   ├── contact/                 # Contact page
+│   ├── privacy-policy/          # Privacy policy page
+│   ├── terms-and-conditions/    # Terms page
+│   └── not-found.tsx           # 404 page
+├── components/                  # Reusable components
+│   ├── Header.tsx              # Navigation header
+│   ├── Footer.tsx              # Footer component
+│   ├── ScrollToTop.tsx         # Scroll to top button
+│   └── ClientScripts.tsx       # Client-side script initializer
+├── public/                     # Static assets
+│   └── assets/                 # Images, fonts, libraries
+│       ├── images/            # All image assets
+│       ├── scss/              # SCSS source files
+│       ├── libs/              # Third-party libraries
+│       └── js/                # Custom JavaScript
+├── styles/                     # Global styles
+│   └── globals.scss           # Main SCSS entry point
+└── next.config.ts             # Next.js configuration
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Bootstrap** - CSS framework for responsive design
+- **SCSS** - CSS preprocessor
+- **AOS** - Animate On Scroll library
+- **jQuery** - For legacy animations and interactions
+- **Iconify** - Icon library
+- **next/font** - Automatic font optimization for Google Fonts
+
+## Design & Animations
+
+All original designs and animations have been preserved:
+- AOS scroll animations
+- Bootstrap components (accordion, offcanvas, tooltips)
+- Custom marquee animations
+- Smooth scroll navigation
+- Counter animations
+- Hover effects and transitions
+- **Fonts**: Inter Tight (main) and Instrument Serif (italic/em) - optimized with Next.js font loading
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+This project is based on the Awake Bootstrap Template.
+
+## Credits
+
+Original template by WrapPixel
+Converted to Next.js with TypeScript
